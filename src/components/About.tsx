@@ -1,7 +1,7 @@
 export function About() {
   return (
     <section className="max-w-4xl mx-auto px-6 py-16">
-      <div className="w-12 h-1 bg-[#FF7A00] mb-8"></div>
+      <div className="w-12 h-1 bg-[var(--color-primary)] mb-8"></div>
       <h2>About</h2>
       
       <div className="max-w-3xl">

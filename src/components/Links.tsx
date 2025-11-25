@@ -25,7 +25,7 @@ export function Links() {
   ];
 
   return (
-    <section className="w-full py-16 bg-[#fafafa]">
+    <section className="w-full py-16 bg-[var(--color-gray-light)]">
       <div className="max-w-4xl mx-auto px-6">
         <h2>Links</h2>
         
@@ -36,14 +36,14 @@ export function Links() {
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 p-4 bg-white rounded-lg border border-[#e5e5e5] hover:border-[#FF7A00] transition-colors group"
+              className="flex items-center gap-4 p-4 bg-white rounded-lg border border-[var(--color-border)] hover:border-[var(--color-primary)] transition-colors group"
             >
               {typeof item.icon === "string" ? (
-                <div className="w-6 h-6 flex items-center justify-center text-[#888888] group-hover:text-[#FF7A00] transition-colors">
+                <div className="w-6 h-6 flex items-center justify-center text-[var(--color-text-secondary)] group-hover:text-[var(--color-primary)] transition-colors">
                   <span>𝕏</span>
                 </div>
               ) : (
-                <item.icon className="w-6 h-6 text-[#888888] group-hover:text-[#FF7A00] transition-colors" />
+                <item.icon className="w-6 h-6 text-[var(--color-text-secondary)] group-hover:text-[var(--color-primary)] transition-colors" />
               )}
               <span>{item.label}</span>
             </a>

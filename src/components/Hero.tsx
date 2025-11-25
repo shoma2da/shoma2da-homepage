@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section className="max-w-4xl mx-auto px-6 py-20 text-center">
       <div className="flex justify-center mb-8">
-        <div className="w-32 h-32 rounded-full overflow-hidden bg-[#e5e5e5] flex items-center justify-center">
+        <div className="w-32 h-32 rounded-full overflow-hidden bg-[var(--color-border)] flex items-center justify-center">
           <ImageWithFallback 
             src={profileImage}
             alt="Shoichi Matsuda"
