@@ -1,26 +1,30 @@
-import { Github, Facebook } from "lucide-react";
+import { siX, siGithub, siFacebook } from "simple-icons";
 
 export function Links() {
   const links = [
     { 
-      icon: "X", 
+      icon: "x", 
       label: "X (English)", 
-      url: "https://x.com/EnglishMarcos" 
+      url: "https://x.com/EnglishMarcos",
+      iconData: siX
     },
     { 
-      icon: "X", 
+      icon: "x", 
       label: "X (Japanese)", 
-      url: "https://x.com/shoma2da" 
+      url: "https://x.com/shoma2da",
+      iconData: siX
     },
     { 
-      icon: Github, 
+      icon: "github", 
       label: "GitHub", 
-      url: "https://github.com/shoma2da" 
+      url: "https://github.com/shoma2da",
+      iconData: siGithub
     },
     { 
-      icon: Facebook, 
+      icon: "facebook", 
       label: "Facebook", 
-      url: "https://www.facebook.com/marcos.shoichi.matsuda" 
+      url: "https://www.facebook.com/marcos.shoichi.matsuda",
+      iconData: siFacebook
     },
   ];
 
@@ -38,12 +42,17 @@ export function Links() {
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-4 bg-white rounded-lg border border-[#e5e5e5] hover:border-[#FF7A00] transition-colors group"
             >
-              {typeof item.icon === "string" ? (
-                <div className="w-6 h-6 flex items-center justify-center text-[#888888] group-hover:text-[#FF7A00] transition-colors">
-                  <span>𝕏</span>
-                </div>
-              ) : (
-                <item.icon className="w-6 h-6 text-[#888888] group-hover:text-[#FF7A00] transition-colors" />
+              {item.iconData && (
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  className="w-6 h-6 text-[#888888] group-hover:text-[#FF7A00] transition-colors"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>{item.iconData.title}</title>
+                  <path d={item.iconData.path} />
+                </svg>
               )}
               <span>{item.label}</span>
             </a>

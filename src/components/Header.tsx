@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { siGithub } from "simple-icons";
 
 export function Header() {
   return (
@@ -28,7 +28,16 @@ export function Header() {
             className="hover:text-[#FF7A00] transition-colors"
             aria-label="GitHub"
           >
-            <Github className="w-5 h-5" />
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              className="w-5 h-5"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>{siGithub.title}</title>
+              <path d={siGithub.path} />
+            </svg>
           </a>
         </nav>
       </div>

@@ -1,5 +1,3 @@
-import { Github } from "lucide-react";
-
 export function Footer() {
   return (
     <footer className="border-t border-[#e5e5e5] py-16">
