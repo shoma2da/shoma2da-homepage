@@ -1,5 +1,5 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import profileImage from "figma:asset/profile.png";
+import profileImage from "../assets/profile.png";
 
 export function Hero() {
   return (
