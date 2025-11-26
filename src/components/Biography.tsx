@@ -9,7 +9,7 @@ export function Biography() {
   ];
 
   return (
-    <section className="w-full py-16 bg-[var(--color-gray-light)]">
+    <section className="w-full py-16 bg-[#fafafa]">
       <div className="max-w-4xl mx-auto px-6">
         <h2>Biography</h2>
         
@@ -17,14 +17,14 @@ export function Biography() {
           {timeline.map((item, index) => (
             <div key={index} className="flex gap-6 items-start">
               <div className="flex flex-col items-center">
-                <div className="w-3 h-3 bg-[var(--color-primary)] rounded-full"></div>
+                <div className="w-3 h-3 bg-[#FF7A00] rounded-full"></div>
                 {index !== timeline.length - 1 && (
-                  <div className="w-0.5 h-full min-h-[2rem] bg-[var(--color-border)] mt-2"></div>
+                  <div className="w-0.5 h-full min-h-[2rem] bg-[#e5e5e5] mt-2"></div>
                 )}
               </div>
               
               <div className="flex-1 pb-2 -mt-1">
-                <div className="text-[var(--color-primary)] font-bold mb-1 leading-none">{item.year}</div>
+                <div className="text-[#FF7A00] font-bold mb-1 leading-none">{item.year}</div>
                 <div className="opacity-80">{item.event}</div>
               </div>
             </div>

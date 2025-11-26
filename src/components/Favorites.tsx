@@ -22,7 +22,7 @@ export function Favorites() {
               key={index} 
               className="flex items-center gap-4 p-4 rounded-lg group"
             >
-              <Icon className="w-6 h-6 text-[var(--color-text-secondary)] group-hover:text-[var(--color-primary)] transition-colors" />
+              <Icon className="w-6 h-6 text-[#888888] group-hover:text-[#FF7A00] transition-colors" />
               <span>{item.label}</span>
             </div>
           );
