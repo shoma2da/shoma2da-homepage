@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+      /* 基本設定 */
+      "target": "ES2020",
+      "useDefineForClassFields": true,
+  
+      /* ESM + Vite の推奨設定 */
+      "module": "ESNext",
+      "moduleResolution": "bundler",
+      "lib": ["ES2020", "DOM", "DOM.Iterable"],
+  
+      /* JSX */
+      "jsx": "react-jsx",
+  
+      /* 型チェックの厳格化 */
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": false,
+      "noFallthroughCasesInSwitch": true,
+  
+      /* よく使う便利オプション */
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "allowSyntheticDefaultImports": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+  
+      /* パスエイリアス（任意） */
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"]
+      }
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+  }
