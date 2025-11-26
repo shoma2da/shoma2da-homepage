@@ -22,7 +22,7 @@ export function Header() {
             Blog <span className="text-[#888888]">(Coming Soon)</span>
           </a>
           <a 
-            href="https://github.com/shoma2da" 
+            href="https://github.com/shoma2da/shoma2da-homepage" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-[#FF7A00] transition-colors"
