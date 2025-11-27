@@ -16,10 +16,12 @@ export function Header() {
         
         <nav className="flex items-center gap-6">
           <a 
-            href="https://blog.shoma2da.com" 
+            href="https://medium.com/@shoma2da" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-[#FF7A00] transition-colors"
           >
-            Blog <span className="text-[#888888]">(Coming Soon)</span>
+            Blog
           </a>
           <a 
             href="https://github.com/shoma2da/shoma2da-homepage" 
