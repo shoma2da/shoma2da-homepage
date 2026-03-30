@@ -2,15 +2,9 @@ import { siX, siGithub, siFacebook } from "simple-icons";
 
 export function Links() {
   const links = [
-    { 
-      icon: "x", 
-      label: "X (English)", 
-      url: "https://x.com/EnglishMarcos",
-      iconData: siX
-    },
-    { 
-      icon: "x", 
-      label: "X (Japanese)", 
+    {
+      icon: "x",
+      label: "X",
       url: "https://x.com/shoma2da",
       iconData: siX
     },
